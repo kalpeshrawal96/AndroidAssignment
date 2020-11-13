@@ -2,6 +2,7 @@ package com.example.scrollview;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -62,18 +63,32 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                txtName.setText("Name: "+ editName.getText().toString());
-                txtDOB.setText("Date Of Birth: "+ editDOB.getText().toString());
-                txtAddress.setText("Address: "+ editAddress.getText().toString());
-                txtCity.setText("City: "+ editCity.getText().toString());
-                txtPinCode.setText("Pin Code: "+ editPinCode.getText().toString());
-                txtMobile.setText("Mobile No.: "+ editMobile.getText().toString());
-                txtEmail.setText("Email ID: "+ editEmail.getText().toString());
-                txtInterest.setText("Interest: "+ editInterest.getText().toString());
-                txtProfile.setText("Profile: "+ editProfile.getText().toString());
-                txtExperience.setText("Experience: "+ editExperience.getText().toString());
+//                txtName.setText("Name: "+ editName.getText().toString());
+//                txtDOB.setText("Date Of Birth: "+ editDOB.getText().toString());
+//                txtAddress.setText("Address: "+ editAddress.getText().toString());
+//                txtCity.setText("City: "+ editCity.getText().toString());
+//                txtPinCode.setText("Pin Code: "+ editPinCode.getText().toString());
+//                txtMobile.setText("Mobile No.: "+ editMobile.getText().toString());
+//                txtEmail.setText("Email ID: "+ editEmail.getText().toString());
+//                txtInterest.setText("Interest: "+ editInterest.getText().toString());
+//                txtProfile.setText("Profile: "+ editProfile.getText().toString());
+//                txtExperience.setText("Experience: "+ editExperience.getText().toString());
+                StringBuilder strData = new StringBuilder();
+                strData.append("Name: "+ editName.getText().toString()+"~~");
+                strData.append("Date Of Birth: "+ editDOB.getText().toString()+"~~");
+                strData.append("Address: "+ editAddress.getText().toString()+"~~");
+                strData.append("City: "+ editCity.getText().toString()+"~~");
+                strData.append("Pin Code: "+ editPinCode.getText().toString()+"~~");
+                strData.append("Mobile No.: "+ editMobile.getText().toString()+"~~");
+                strData.append("Email ID: "+ editEmail.getText().toString()+"~~");
+                strData.append("Interest: "+ editInterest.getText().toString()+"~~");
+                strData.append("Profile: "+ editProfile.getText().toString()+"~~");
+                strData.append("Experience: "+ editExperience.getText().toString());
                 Toast toast =  Toast.makeText(getApplicationContext(),editName.getText().toString() + "'s Registration Successful",Toast.LENGTH_SHORT);
                 toast.show();
+                Intent myIntent= new Intent(getApplicationContext(),EmployeeHome.class);
+                myIntent.putExtra("data",strData.toString());
+                startActivity(myIntent);
             }
         });
     }
