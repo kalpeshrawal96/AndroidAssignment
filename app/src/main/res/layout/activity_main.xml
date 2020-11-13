@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:id="@+id/txtName"
+            android:layout_margin="10dp"
+            android:textSize="20sp"></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTxtName"
+            android:hint="Enter your name"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/txtName"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Of Birth:"
+            android:id="@+id/txtDOB"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/editTxtName"></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editDOB"
+            android:hint="Enter your Date of Birth DD/MM/YY"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:inputType="date"
+            android:layout_below="@+id/txtDOB"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address:"
+            android:id="@+id/txtAddress"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/editDOB"></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editAddress"
+            android:hint="Enter your address"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:inputType="textMultiLine"
+            android:layout_below="@+id/txtAddress"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City:"
+            android:id="@+id/txtCity"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_below="@id/editAddress"></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editCity"
+            android:hint="Enter City"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/txtCity"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pin Code:"
+            android:id="@+id/txtPinCode"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_below="@id/editCity"></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editPinCode"
+            android:hint="Enter Pin Code"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:layout_below="@+id/txtPinCode"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile No.:"
+            android:id="@+id/txtMobile"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_below="@id/editPinCode"></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editMobile"
+            android:hint="Enter Mobile No."
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:inputType="phone"
+            android:layout_below="@+id/txtMobile"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email ID:"
+            android:id="@+id/txtEmail"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_below="@id/editMobile"></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editEmail"
+            android:hint="Enter Email ID"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:inputType="textEmailAddress"
+            android:layout_below="@+id/txtEmail"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interest:"
+            android:id="@+id/txtInterest"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_below="@id/editEmail"></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editInterest"
+            android:hint="Enter your Interests"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:inputType="textMultiLine"
+            android:layout_below="@+id/txtInterest"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile:"
+            android:id="@+id/txtProfile"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_below="@id/editInterest"></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editProfile"
+            android:hint="Enter your Profile"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:inputType="textMultiLine"
+            android:layout_below="@+id/txtProfile"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experience:"
+            android:id="@+id/txtExperience"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_below="@id/editProfile"></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editExperience"
+            android:hint="Enter your Experience"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:inputType="textMultiLine"
+            android:layout_below="@+id/txtExperience"></EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:text="Submit"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/editExperience"></Button>
+    </RelativeLayout>
+</ScrollView>
+
